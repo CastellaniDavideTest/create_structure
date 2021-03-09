@@ -13,10 +13,10 @@
   confinement: strict
 
   parts:
-    createstructure:
+    manage-project:
       plugin: cmake
       source: debian
 
   apps:
-    createstructure:
+    manage-project:
       command: createstructure
