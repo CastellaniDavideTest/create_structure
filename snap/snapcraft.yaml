@@ -14,7 +14,7 @@
 
   parts:
     manage-project:
-      plugin: gcc
+      plugin: cmake
       source: debian
 
   apps:
