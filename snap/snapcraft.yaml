@@ -13,10 +13,10 @@
   confinement: devmode # use 'strict' once you have the right plugs and slots
 
   parts:
-    hello:
+    createstructure:
       plugin: cmake
-      source: src
+      source: debian
 
   apps:
-    hello-world-cli:
-      command: hello
+    createstructure:
+      command: createstructure
