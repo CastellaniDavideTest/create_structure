@@ -13,13 +13,11 @@
   confinement: devmode # use 'strict' once you have the right plugs and slots
 
   apps:
-    myaction:
-      command: createstructure
+    part-os-release:
+      command: debian/createstructure
   parts:
-    manage-project:
-      # See 'snapcraft plugins'
-      plugin: nil
-      source: ./debian
+    part-os-release:
+      plugin: dump
+      source: .
       organize:
-        myaction: .
-  
+        createstructure: debian/
