@@ -12,12 +12,11 @@
   grade: devel # must be 'stable' to release into candidate/stable channels
   confinement: devmode # use 'strict' once you have the right plugs and slots
 
-  apps:
-    part-os-release:
-      command: debian/createstructure
   parts:
-    part-os-release:
-      plugin: dump
-      source: .
-      organize:
-        createstructure: debian/
+    hello:
+      plugin: cmake
+      source: debian
+
+  apps:
+    hello-world-cli:
+      command: createstructure
