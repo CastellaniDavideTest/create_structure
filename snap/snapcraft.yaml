@@ -18,8 +18,7 @@
   parts:
     manage-project:
       # See 'snapcraft plugins'
-      plugin: python
-      plugin: pypi
+      plugin: nil
       source: ./debian
       organize:
         myaction: .
