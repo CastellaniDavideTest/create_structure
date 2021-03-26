@@ -6,6 +6,7 @@ on:
 jobs:
   test-enviroment-variabiles:
     runs-on: ubuntu-latest
+    environment: test
     steps:
     - uses: actions/checkout@v2
     
