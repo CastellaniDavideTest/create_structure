@@ -57,6 +57,7 @@ jobs:
   create-deb:
     needs: test-enviroment-variabiles
     runs-on: ubuntu-latest
+    environment: create-deb
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies
